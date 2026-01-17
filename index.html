@@ -14,25 +14,44 @@
 
 <body class="flex justify-center items-center bg-[bisque]">
   <section
-    class="container bg-[url('./backgroung.jpg')] bg-cover bg-center text-white w-[700px] h-[400px] flex flex-row-reverse items-center justify-center gap-7  px-5 mt-20 rounded-3xl   ">
+    class="container bg-[url('./backgroung.jpg')] bg-cover bg-center text-white sm:w-[700px] sm:h-[400px] flex sm:flex-row-reverse items-center justify-center sm:gap-7  sm:px-5 mt-20 rounded-3xl  flex-col-reverse my-1.5 px-0 py-4 mx-1.5 w-full h-auto  ">
     <div
-      class="log-in w-[295px] flex flex-col justify-center items-center space-y-5  px-5 py-10 backdrop-blur-xs rounded-2xl ">
+      class="log-in w-full flex-1 flex flex-col justify-center items-center space-y-5  px-5 py-10 backdrop-blur-[10px] rounded-2xl ">
       <div class="input-area relative w-full ">
-        <input class="px-5 py-1.5 bg-white text-black w-full rounded-2xl outline-none " type="email" required>
-        <label class="absolute top-[7px] left-5 text-black  " for="email">Email :</label>
+        <input class="peer px-5 py-1.5 bg-white text-black w-full rounded-2xl outline-none " type="email" required>
+        <label class="absolute top-[6px] left-5 text-black pointer-events-none transition-all duration-500
+        peer-focus:font-bold
+        peer-focus:scale-90
+        peer-focus:translate-x-.5
+        peer-focus:-translate-y-[28px]
+        peer-valid:-translate-y-[28px]
+        peer-valid:scale-90
+        peer-valid:font-bold
+        peer-valid:translate-x-0.5
+        " for="email">Email :</label>
       </div>
       <div class="input-area relative w-full ">
-        <input class="px-5 py-1.5 bg-white  text-black w-full rounded-2xl outline-none " type="password" required>
-        <label class="absolute top-[7px] left-5 text-black " for="password">Password:</label>
+        <input class="peer px-5 py-1.5 bg-white  text-black w-full rounded-2xl outline-none  " type="password" required>
+        <label class="absolute top-[6px] left-5 text-black pointer-events-none transition-all duration-500
+        peer-focus:font-bold
+        peer-focus:scale-90
+        peer-focus:translate-x-0.5
+        peer-focus:-translate-y-[28px]
+        peer-valid:-translate-y-[28px]
+        peer-valid:scale-90
+        peer-valid:font-bold
+        peer-valid:translate-x-0.5
+        " for="password">Password:</label>
       </div>
+
       <button
-        class="w-[100px] p-2.5  font-semibold rounded-lg text-black bg-gradient-to-r from-[#ff5f6d] to-[#ffc371]  hover:bg-none hover:bg-amber-50  hover:text-black  cursor-pointer">Log
+        class="w-[100px] px-2.5 py-1.5 text-[14px] font-semibold rounded-lg text-black bg-gradient-to-r from-[#ff5f6d] to-[#ffc371]  hover:bg-none hover:border-[#ff5f6d] hover:border-2  hover:text-[#ff5f6d]  cursor-pointer">Log
         In</button>
       <button
-        class="  w-[100px] p-2.5 font-semibold rounded-lg text-black bg-gradient-to-r from-[#ff5f6d] to-[#ffc371] hover:bg-none hover:bg-amber-50  hover:text-black cursor-pointer ">Sign
+        class="  w-[100px] px-2.5 py-1.5 text-[14px] font-semibold rounded-lg text-black bg-gradient-to-r from-[#ff5f6d] to-[#ffc371] hover:bg-none hover:border-[#ff5f6d] hover:border-2  hover:text-[#ff5f6d]  cursor-pointer ">Sign
         Up</button>
     </div>
-    <div class="text w-[295px] space-y-2 text-[rgb(163,135,135)]">
+    <div class="text flex flex-col gap-2 text-center sm:text-left w-[295px]  text-[rgb(163,135,135)]">
       <h2 class=" text-2xl font-bold">Mahei Hasan Siyam</h2>
       <p>I am a student of the Department of Statistics, University of Rajshahi.</p>
       <p>You can visite me...</p>
